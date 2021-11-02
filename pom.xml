@@ -35,11 +35,7 @@
 
   <build>
       <plugins>
-          <!-- 
-          This plugin configuration will enable maven to include the project dependencies
-          in the produced jar file.
-          It also enables us to run the jar file using `java -jar command`
-           -->
+
           <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-shade-plugin</artifactId>
@@ -62,32 +58,9 @@
               </executions>
           </plugin>
 
-          <!-- fat-jar -->
-          <!-- https://books.sonatype.com/mvnex-book/reference/customizing-sect-custom-packaged.html -->
-          <!--
-          <plugin>
-              <artifactId>maven-assembly-plugin</artifactId>
-              <configuration>
-                  <descriptorRefs>
-                      <descriptorRef>jar-with-dependencies</descriptorRef>
-                  </descriptorRefs>
-                  <archive>
-                      <manifest>
-                          <mainClass>com.livescore.scraper.App</mainClass>
-                      </manifest>
-                  </archive>
-              </configuration>
-              <executions>
-                  <execution>
-                      <id>simple-command</id>
-                      <phase>package</phase>
-                      <goals>
-                          <goal>attached</goal>
-                      </goals>
-                  </execution>
-              </executions>
-          </plugin>
-          -->
+
       </plugins>
+
+      <finalName>MLOPS4-Scrapper</finalName>
   </build>
 </project>
