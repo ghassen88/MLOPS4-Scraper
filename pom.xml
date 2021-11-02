@@ -61,6 +61,6 @@
 
       </plugins>
 
-      <finalName>MLOPS4-Scrapper</finalName>
+      <finalName>mlop-scraper</finalName>
   </build>
 </project>
