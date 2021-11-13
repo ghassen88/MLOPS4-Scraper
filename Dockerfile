@@ -1,4 +1,4 @@
 FROM openjdk:8
-COPY taget/mlop-scraper.jar mlop-scraper.jar
 EXPOSE 8082
-CMD ["java","-jar","/mlop-scraper.jar"]
+ADD taget/mlop-scraper.jar mlop-scraper.jar
+ENTRYPOINT ["java","-jar","/mlop-scraper.jar"]
